@@ -1,0 +1,103 @@
+# GRUB2 gfxmenu Linux Vimix theme heavily modified by me
+# Designed for any resolution
+
+# Global Property
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "Lato 12"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "90%"
+terminal-height: "90%"
+terminal-border: "3"
+
+
+# Show the top mini menu
++ boot_menu {
+  left = 5%
+  top = 10%
+  width = 2
+  height = 35%
+  item_font = "Lato 12"
+  item_color = "#000000"
+  selected_item_color = "#000000"
+  item_height = 12
+  item_spacing = 0
+  item_padding = 0
+  icon_height = 280
+  icon_width = 140
+}
+# height = 40%
+
+#  item_font = "Lato Bold 48"
+#  item_color = "#000000"
+#  selected_item_color = "#000000"
+#  item_height = 48
+#  item_spacing = 0
+# selected_item_pixmap_style = "select_*.png"
+
+# Show the low details menu
++ boot_menu {
+  left = 5%
+  top = 50%
+  width = 700
+  height = 40%
+  item_font = "Lato Bold 12"
+  item_height = 25
+  item_spacing = 2
+  item_color = "#661100"
+  selected_item_font = "Lato Bold 12"
+  selected_item_color = "#dddddd"
+  icon_height = 1
+  icon_width = 1
+  item_icon_space = 1
+  menu_pixmap_style = menu_*.png
+  item_pixmap_style = item_*.png
+  selected_item_pixmap_style = "select_*.png"
+}
+
+# icon_height = 50
+
+# Show a countdown message using the label component
++ circular_progress {
+  top = 20
+  left = 100%-200
+  width = 150
+  height = 150
+  center_bitmap = manjaro-plasma.png
+  tick_bitmap = manjaro-d1.png
+  num_ticks = 20
+  ticks_disappear = false
+  id = "__timeout__"
+}
+
+
+# Show a countdown message using the label component
++ label {
+  top = 200
+  left = 100%-200
+  width = 150
+  height = 150
+  id = "__timeout__"
+  font = "Lato Bold Bold 48"
+  color = "#992200"
+  align = "center"
+  visible = true
+
+}
+# text = " %d "
+
+
+#help bar at bottom
++ label {
+	top = 95%
+	left = 5%
+	width = 500
+	height = 10%
+	text = "@KEYMAP_LONG@"
+	align = "left"
+	font = "Lato Bold 12"
+	color = "#ffaa00"
+}
