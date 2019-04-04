@@ -4,7 +4,7 @@
 # Global Property
 title-text: ""
 desktop-image: "background.png"
-desktop-color: "#000000"
+desktop-color: "#222d32"
 terminal-font: "Lato 12"
 terminal-box: "terminal_box_*.png"
 terminal-left: "0"
@@ -21,8 +21,8 @@ terminal-border: "3"
   width = 2
   height = 35%
   item_font = "Lato 12"
-  item_color = "#000000"
-  selected_item_color = "#000000"
+  item_color = "#222d32"
+  selected_item_color = "#222d32"
   item_height = 12
   item_spacing = 0
   item_padding = 0
