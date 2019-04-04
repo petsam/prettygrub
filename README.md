@@ -2,10 +2,7 @@
 Grub theme - template for horizontal-grub menu
 
 ==============================================
-<<<<<<< HEAD
 
-=======
->>>>>>> 0dea18ff29ab3ac618ee8ec53420eeee828c08da
 [StylishDark/Vimix](https://github.com/vinceliuice/grub2-themes) grub theme was used as a base, but is heavily modified.
 
 **Special thanks** to @sgse (aka [sgs](https://forum.manjaro.org/u/sgs/summary) at Manjaro Forum), for his valuable contribution with images, wallpaper and extensive testing. Without good company, coding or any work is boring!
