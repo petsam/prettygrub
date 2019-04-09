@@ -39,8 +39,9 @@ To make your grub menu look like a fake horizontal (you will better understand w
 ### Installation (short version):
 ```
 git clone https://github.com/petsam/prettygrub.git
+rm -rf prettygrub/.git
 sudo cp -R prettygrub /boot/grub/themes/
-sudo sed -i 's/^?GRUB_THEME=/GRUB_THEME="/boot/grub/themes/prettygrub/theme.txt"/g' /etc/default/grub
+sudo sed -i '/GRUB_THEME\=/ c GRUB_THEME\=\"\/boot\/grub\/themes\/prettygrub\/theme.txt\"' /etc/default/grub
 sudo update-grub
 git clone https://github.com/petsam/horizontal-grub.git
 ./horizontal-grub/horizontal-grub
@@ -52,7 +53,7 @@ If you want to preview how the new theme looks like you may:
 * Install (if not already) `grub2-theme-preview` from AUR
 * Preview the theme with (check `--help` for other options):
 ```
-sudo grub2-theme-preview
+sudo grub2-theme-preview /boot/grub/themes/prettygrub
 ```
 
 ### Theming details
